@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>GT website</title>
+</head>
+<body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://viewer.altium.com/client/static/js/embed.js"></script>
+<script>
+ localStorage.clear();
+ $(function () {
+  var tabContainers = $('div.tabs > div');
+  
+  $('div.tabs ul.nav-pills a').click(function () {
+									tabContainers.hide().filter(this.hash).show();
+									
+									$('div.tabs ul.nav-pills a').removeClass('selected');
+									$(this).addClass('selected');
+									
+									return false;
+									}).filter(':first').click();
+	$('div.tabs a').click(function () {
+									tabContainers.hide().filter(this.hash).show();
+									
+									$('div.tabs ul.nav-pills a').removeClass('selected');
+									$(this).addClass('selected');
+									
+									return false;
+									}).filter(':first').click();
+  });
+</script>
+<div class="container">
+<h1>Gabriel Tetar</h1>
+</div>
+<div class="tabs">
+<ul class="nav nav-pills  flex-column nav-nfill" style="margin-left: auto;margin-right: auto;width: 25%; font-size: 170%; padding-top: 2%;padding-bottom: 2%;">
+	<li><a href="#prj">My Projects</a></li>
+	<li><a href="#res">My Resume</a></li>
+	<li><a href="#abo">About</a></li>
+</ul>
+
+<div id="prj">
+<div class="container">
+<h1 style="margin-bottom=300px;padding-bottom: 2%;">My projects</h1>
+</div>
+
+<div class="container">
+
+<div class="media" style="padding-bottom: 10%;padding-bottom: 10%;">
+	<a href="#prjrob">
+  <img class="mr-3" src="images/robot1.PNG" alt="robot1" style="width:456px;height:368px;">
+  </a>
+  <div class="align-self-center media-body">
+    <h5 class="mt-0"><a href="#prjrob">Robotics club</a></h5>
+    <p class="mediast">The work I have done with teammates to compete at the French Robotic Cup</p>
+    <p class="mb-0">2019 - 2020<br /><br /></p>
+  </div>
+</div>
+
+<div class="media" style="padding-bottom: 10%;padding-bottom: 10%;">
+	<a href="#prjrpi">
+  <img class="mr-3" src="images/rpi.PNG" alt="rpi" style="width:456px;height:405px;">
+  </a>
+  <div class="align-self-center media-body">
+    <h5 class="mt-0"><a href="#prjrpi">Raspberry Pi4 dev</a></h5>
+    <p>My current project, dev on the new raspberry</p>
+    <p class="mb-0">2020 +<br /><br /></p>
+  </div>
+</div>
+
+<div class="media" style="padding-bottom: 10%;padding-bottom: 10%;">
+	<a href="#prjrck">
+  <img class="mr-3" src="images/openrocket.PNG" alt="openrocket" style="width:456px;height:128px;">
+  </a>
+  <div class="align-self-center media-body">
+    <h5 class="mt-0"><a href="#prjrck">Model Rocket Construction</a></h5>
+    <p>Model rocket with embedded electronics</p>
+    <p class="mb-0">2018<br /><br /></p>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div id="prjrob">
+	<div class="body1">
+	<div class="container">
+		<p>Soon...<br />
+		<!--
+		<div class="altium-ecad-viewer" data-project-src="5f74ba85-0f0c-4d81-b219-66b657f7a83c" style="border-radius: 0px 0px 4px 4px; height: 500px; border-style: solid; border-width: 1px; border-color: rgb(241, 241, 241); overflow: hidden; max-width: 1280px; max-height: 700px; box-sizing: border-box;"></div>
+		-->
+		</p>
+</div>
+</div>
+</div>
+
+<div id="prjrpi">
+	<div class="body1">
+	<div class="container">
+		<p>Soon...<br />
+		</p>
+</div>
+</div>
+</div>
+
+<div id="prjrck">
+	<div class="body1">
+	<div class="container">
+		<p>Soon...<br />
+		</p>
+</div>
+</div>
+</div>
+
+<div id="res">
+	<div class="body1">
+		<p>I will soon add an embed to display PDF</p>
+	</div>
+</div>
+
+<div id="abo">
+	<div class="body1">
+		<p>This website was developped using Html/Css with Bootstrap and Javascript<br />
+			It is hosted on github<br />
+			First version : 18/09/2020<br />
+			Last update : 20/09/2020</p>
+	</div>
+</div>
+</div>
+</body>
+</html>
